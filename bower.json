@@ -1,0 +1,21 @@
+{
+  "name": "bilyrorys.cz",
+  "version": "0.1.0",
+  "authors": [
+    "ivoszz <ivoszz@gmail.com>"
+  ],
+  "description": "Web bilyrorys.cz",
+  "main": "app/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.5",
+    "slick-carousel": "~1.5.5"
+  }
+}

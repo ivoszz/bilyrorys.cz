@@ -1,0 +1,178 @@
+// Core variables and mixins
+@import "normalize";
+
+@import "susy";
+
+@import "slick/slick";
+@import "slick/theme";
+
+//variables
+$column-width: 66px;
+$margin: 2px;
+$row-height: 2*($column-width + 2*$margin);
+
+//fonts
+$font-stack: "Open Sans", Helvetica, sans-serif;
+
+// colors
+$pink: rgb(253,223,240);
+$beige: rgb(253,224,201);
+$green: rgb(185,248,242);
+$darkgray: rgb(80,80,80);
+
+$susy: (
+  columns: 12,
+  column-width: $column-width,
+  gutters: 2*$margin/$column-width,
+  gutter-position: split,
+  global-box-sizing: content-box,
+  math: static
+);
+
+body {
+  font: 12px $font-stack;
+  margin-top: 20px;
+}
+
+.content {
+  @include container;
+}
+
+.bigbox {
+  @include span(4);
+  height: 2*$row-height - 2*$margin;
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+.widebox {
+  @include span(4);
+  height: $row-height - 2*$margin;
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.superwidebox {
+  @include span(8);
+  height: $row-height - 2*$margin;
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+.box {
+  @include span(2);
+  height: $row-height - 2*$margin;
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.smallbox {
+  @include span(2);
+  background-color: $darkgray;
+  color: white;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  p {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin lightened-box($opacity) {
+  opacity: $opacity;
+}
+
+.menu:hover {
+  @include lightened-box(0.7);
+}
+
+/*
+.menu:hover {
+  position: relative;
+  margin: -10px;
+  height: 160px;
+  width: 160px;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  :before, :after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px/10px;
+  }
+
+  :after {
+    right: 10px;
+    left: auto;
+    transform: skew(8deg) rotate(3deg);
+  }
+}
+*/
+
+.white {
+  background-color: white;
+}
+
+.pink {
+  background-color: $pink;
+}
+
+.beige {
+  background-color: $beige;
+}
+
+.green {
+  background-color: $green;
+}
+
+.gallery {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 416px;
+}
+.item {
+  margin: 5px;
+  height: 376px;
+  width: auto;
+}
+
+.text {
+  padding: 0 15px;
+  color: #292929;
+
+  .head {
+    margin-top: 5px;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+
+footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
