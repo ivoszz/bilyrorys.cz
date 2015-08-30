@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bílý rorýs</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="/files/styles/style.min.css">
 </head>
 <body>
@@ -37,39 +36,67 @@
   </div>
 
   <div class="gallery">
-    <img class="item" src="http://placehold.it/350x420">
-    <img class="item" src="http://placehold.it/350x240">
-    <img class="item" src="http://placehold.it/180x360">
-    <img class="item" src="http://placehold.it/275x240">
-    <img class="item" src="http://placehold.it/125x380">
+    <div><img class="item" src="/files/images/ilustrace/ptaci_ostrov.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/nad_brnem.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/cesta_do_hlubin.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/leciva_kvetina.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/strom_hojnosti.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/poklad.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/drobne_ilustrace.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/drobne_ilustrace_detske.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/velka_hvezda.jpg"></div>
+    <div><img class="item" src="/files/images/ilustrace/bily_rorys.jpg"></div>
   </div>
 
   <div class="content">
 
     <!-- row(5) -->
 
-    <div class="smallbox">
-      <p>ilustrace</p>
+    <div class="smallbox menu">
+      <a href="/ilustrace.html"><p>ilustrace</p></a>
     </div>
-    <div class="smallbox">
-      <p>web design</p>
+    <div class="smallbox menu">
+      <a href="/webdesign.html"><p>web design</p></a>
     </div>
-    <div class="smallbox">
-      <p>fotografie</p>
+    <div class="smallbox menu">
+      <a href="/fotografie.html"><p>fotografie</p></a>
     </div>
-    <div class="smallbox">
-      <p>plakáty</p>
+    <div class="smallbox menu">
+      <a href="/plakaty.html"><p>plakáty</p></a>
     </div>
-    <div class="smallbox">
-      <p>novoročenky</p>
+    <div class="smallbox menu">
+      <a href="/novorocenky.html"><p>novoročenky</p></a>
     </div>
-    <div class="smallbox">
-      <p>tiskoviny</p>
+    <div class="smallbox menu">
+      <a href="/tiskoviny.html"><p>tiskoviny</p></a>
     </div>
   </div>
 
   <footer>
-    <img src="/files/images/podval.png">
+    <p>
+      Něco z mé tvorby najdete také zde:
+    </p>
+    <div class="portfolio">
+      <a class="menu" href="https://www.facebook.com/profile.php?id=100008737654882" target="_blank">
+        <img src="/files/images/facebook.png" alt="Facebook">
+      </a>
+      <a href="#"><img src="/files/images/topdesigner.png" alt=""></a>
+      <a class="menu" href="https://www.pinterest.com/iutinkov/" target="_blank">
+        <img src="/files/images/pinterest.png" alt="TopDesigner">
+      </a>
+      <a class="menu" href="http://www.fler.cz/bily-rorys" target="_blank">
+        <img src="/files/images/fler.png" alt="Fler">
+      </a>
+      <a class="menu" href="https://bilyrorys.carbonmade.com/" target="_blank">
+        <img src="/files/images/carbonmade.png" alt="Carbonmade">
+      </a>
+    </div>
+    <p class="small">
+      Nemůžu a ani nechci umět vše&hellip;</br>
+      Za realizaci těchto stránek proto děkuji IT specialistovi
+      Ivo Solnickému,
+      kterého tímto vřele doporučuji.
+    </p>
   </footer>
 
   <script type="text/javascript" src="/files/components/jquery/dist/jquery.min.js"></script>
@@ -77,11 +104,11 @@
 
   <script>
   $('.gallery').slick({
-    dots: true,
-    infinite: true,
-    arrows: true,
+    // infinite: true,
+    // arrows: true,
     focusOnSelect: true,
-    //accessibility: true;
+    // accessibility: true;
+    slidesToShow: 1,
     centerMode: true,
     variableWidth: true
   });

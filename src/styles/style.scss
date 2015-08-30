@@ -15,9 +15,9 @@ $row-height: 2*($column-width + 2*$margin);
 $font-stack: "Open Sans", Helvetica, sans-serif;
 
 // colors
-$pink: rgb(253,223,240);
+$pink: rgb(250,226,240);
 $beige: rgb(253,224,201);
-$green: rgb(185,248,242);
+$green: rgb(196,236,228);
 $darkgray: rgb(80,80,80);
 
 $susy: (
@@ -79,8 +79,7 @@ body {
 .smallbox {
   @include span(2);
   background-color: $darkgray;
-  color: white;
-  height: 50px;
+  height: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: $margin;
@@ -89,9 +88,17 @@ body {
   p {
     font-size: 20px;
     width: 100%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  a {
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -102,35 +109,6 @@ body {
 .menu:hover {
   @include lightened-box(0.7);
 }
-
-/*
-.menu:hover {
-  position: relative;
-  margin: -10px;
-  height: 160px;
-  width: 160px;
-  z-index: 100;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
-  :before, :after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    top: 0;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    border-radius: 100px/10px;
-  }
-
-  :after {
-    right: 10px;
-    left: auto;
-    transform: skew(8deg) rotate(3deg);
-  }
-}
-*/
 
 .white {
   background-color: white;
@@ -151,12 +129,24 @@ body {
 .gallery {
   margin-top: 2px;
   margin-bottom: 2px;
-  height: 416px;
+  height: 512px;
 }
+
 .item {
-  margin: 5px;
-  height: 376px;
+  margin: 0px;
+  height: 100%;
   width: auto;
+}
+
+.slick-slide:not(.slick-active) {
+  img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    /* Firefox 10+, Firefox on Android */
+    // -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    // filter: gray;
+    /* IE 6-9 */
+  }
 }
 
 .text {
@@ -171,8 +161,37 @@ body {
   }
 }
 
-footer img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.small {
+  font-size: 90%
+}
+
+/*
+ * Styling footer
+ */
+footer {
+  text-align: center;
+
+  p {
+    font: 16px $font-stack;
+    color: $darkgray;
+  }
+
+  .portfolio {
+    display: inline-block;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
 }
