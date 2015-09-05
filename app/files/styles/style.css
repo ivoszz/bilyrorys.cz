@@ -659,23 +659,6 @@ body {
   margin-top: 2px;
   margin-bottom: 2px;
   height: 512px; }
-  .gallery .ref-text {
-    width: 450px;
-    height: auto;
-    margin: 25px 15px;
-    padding: 20px;
-    font-size: 12px;
-    line-height: 1.8; }
-  .gallery .ref-logo {
-    width: 70px;
-    height: auto;
-    padding: 10px; }
-  .gallery .ref-addr {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 10px;
-    line-height: 1.5;
-    text-align: right; }
 
 .item {
   margin: 0px;
@@ -689,6 +672,10 @@ body {
           filter: grayscale(100%);
   /* IE 6-9 */ }
 
+.active .slick-slide:not(.slick-active) img {
+  -webkit-filter: none;
+          filter: none; }
+
 .text {
   padding: 0 15px;
   color: #292929; }
@@ -700,6 +687,33 @@ body {
 
 .small {
   font-size: 90%; }
+
+blockquote {
+  width: 450px;
+  margin: 25px 15px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.65; }
+  blockquote footer {
+    padding-top: 1em; }
+    blockquote footer:after {
+      content: "";
+      display: table;
+      clear: both; }
+    blockquote footer address {
+      float: right;
+      padding-right: 1em;
+      font-size: 11px;
+      line-height: 1.5;
+      text-align: right; }
+    blockquote footer img {
+      float: right;
+      height: 40px;
+      width: auto;
+      padding-right: 3em; }
+
+.right {
+  text-align: right; }
 
 /*
  * Styling footer

@@ -146,29 +146,6 @@ body {
   margin-top: 2px;
   margin-bottom: 2px;
   height: 512px;
-
-  .ref-text {
-    width: 450px;
-    height: auto;
-    margin: 25px 15px;
-    padding: 20px;
-    font-size: 12px;
-    line-height: 1.8;
-  }
-
-  .ref-logo {
-    width: 70px;
-    height: auto;
-    padding: 10px;
-  }
-
-  .ref-addr {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 10px;
-    line-height: 1.5;
-    text-align: right;
-  }
 }
 
 .item {
@@ -188,6 +165,15 @@ body {
   }
 }
 
+.active {
+  .slick-slide:not(.slick-active) {
+    img {
+      filter: none;
+    }
+  }
+}
+
+
 .text {
   padding: 0 15px;
   color: #292929;
@@ -202,6 +188,45 @@ body {
 
 .small {
   font-size: 90%
+}
+
+blockquote {
+  // border-left: .5em solid $green;
+  width: 450px;
+  // background-color: lighten($green, 10%);
+  margin: 25px 15px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.65;
+
+  footer {
+    padding-top: 1em;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    address {
+      float: right;
+      padding-right: 1em;
+      font-size: 11px;
+      line-height: 1.5;
+      text-align: right;
+    }
+
+    img {
+      float: right;
+      height: 40px;
+      width: auto;
+      padding-right: 3em;
+    }
+  }
+}
+
+.right {
+  text-align: right;
 }
 
 /*
