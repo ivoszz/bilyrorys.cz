@@ -615,7 +615,7 @@ body {
   float: left;
   margin-left: 2px;
   margin-right: 2px;
-  background-color: #505050;
+  background-color: #a49c9e;
   height: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -649,20 +649,32 @@ body {
 .green {
   background-color: #c4ece4; }
 
+.gray {
+  background-color: #e5e5e5; }
+
+.midgray {
+  background-color: #9d9d9d; }
+
 .gallery {
   margin-top: 2px;
   margin-bottom: 2px;
   height: 512px; }
   .gallery .ref-text {
-    width: 400px;
+    width: 450px;
     height: auto;
     margin: 25px 15px;
     padding: 20px;
-    font-size: 16px;
-    background-color: #fde0c9; }
+    font-size: 12px;
+    line-height: 1.8; }
+  .gallery .ref-logo {
+    width: 70px;
+    height: auto;
+    padding: 10px; }
   .gallery .ref-addr {
     padding-top: 30px;
-    font-size: 14px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    line-height: 1.5;
     text-align: right; }
 
 .item {
@@ -696,7 +708,7 @@ footer {
   text-align: center; }
   footer p {
     font: 16px "Open Sans", Helvetica, sans-serif;
-    color: #505050; }
+    color: #a49c9e; }
   footer .portfolio {
     display: inline-block;
     height: auto;
@@ -705,8 +717,8 @@ footer {
     footer .portfolio a {
       display: inline-block;
       vertical-align: middle;
-      margin-left: 7px;
-      margin-right: 7px; }
+      margin-left: 5px;
+      margin-right: 5px; }
     footer .portfolio img {
-      width: 70%;
+      width: 60%;
       height: auto; }

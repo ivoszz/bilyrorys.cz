@@ -18,7 +18,10 @@ $font-stack: "Open Sans", Helvetica, sans-serif;
 $pink: rgb(250,226,240);
 $beige: rgb(253,224,201);
 $green: rgb(196,236,228);
-$darkgray: rgb(80,80,80);
+$gray: rgb(229,229,229);
+$lgray: rgb(245,245,245);
+$midgray: rgb(157,157,157);
+$darkgray: rgb(164,156,158);
 
 $susy: (
   columns: 12,
@@ -131,23 +134,39 @@ body {
   background-color: $green;
 }
 
+.gray {
+  background-color: $gray;
+}
+
+.midgray {
+  background-color: $midgray;
+}
+
 .gallery {
   margin-top: 2px;
   margin-bottom: 2px;
   height: 512px;
 
   .ref-text {
-    width: 400px;
+    width: 450px;
     height: auto;
     margin: 25px 15px;
     padding: 20px;
-    font-size: 16px;
-    background-color: $beige;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .ref-logo {
+    width: 70px;
+    height: auto;
+    padding: 10px;
   }
 
   .ref-addr {
     padding-top: 30px;
-    font-size: 14px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    line-height: 1.5;
     text-align: right;
   }
 }
@@ -205,12 +224,12 @@ footer {
     a {
       display: inline-block;
       vertical-align: middle;
-      margin-left: 7px;
-      margin-right: 7px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
 
     img {
-      width: 70%;
+      width: 60%;
       height: auto;
     }
   }
