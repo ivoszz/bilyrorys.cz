@@ -715,6 +715,61 @@ blockquote {
 .right {
   text-align: right; }
 
+.umain {
+  width: 416px;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 512px;
+  font-size: 13px;
+  line-height: 1.8; }
+  .umain .fill {
+    height: 60px; }
+  .umain contact {
+    font-size: 12px;
+    line-height: 1.5; }
+
+.init {
+  font-size: 14px;
+  font-weight: bold; }
+
+.ubox1 {
+  width: 136px;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 136px;
+  margin-top: 2px;
+  margin-bottom: 2px; }
+  .ubox1 img {
+    width: 100%;
+    height: 100%; }
+
+.ubox2 {
+  width: 136px;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 372px;
+  margin-top: 2px;
+  margin-bottom: 2px; }
+  .ubox2 img {
+    width: 100%;
+    height: 100%; }
+
+.uwidebox {
+  width: 276px;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 512px; }
+
 /*
  * Styling footer
  */
@@ -726,8 +781,8 @@ footer {
   footer .portfolio {
     display: inline-block;
     height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px; }
+    padding-top: 0px;
+    padding-bottom: 0px; }
     footer .portfolio a {
       display: inline-block;
       vertical-align: middle;

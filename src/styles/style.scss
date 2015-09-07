@@ -173,7 +173,6 @@ body {
   }
 }
 
-
 .text {
   padding: 0 15px;
   color: #292929;
@@ -229,6 +228,63 @@ blockquote {
   text-align: right;
 }
 
+.umain {
+  @include span(6);
+  height: 100%;
+  margin-top: $margin;
+  margin-bottom: $margin;
+  height: 512px;
+  font-size: 13px;
+  line-height: 1.8;
+
+  .fill {
+    height: 60px;
+  }
+
+  contact {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+.init {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ubox1 {
+  @include span(2);
+  height: 136px;
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ubox2 {
+  @include span(2);
+  height: 372px;
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.uwidebox {
+  @include span(4);
+  height: 100%;
+  margin-top: $margin;
+  margin-bottom: $margin;
+  height: 512px;
+}
+
+
 /*
  * Styling footer
  */
@@ -243,8 +299,8 @@ footer {
   .portfolio {
     display: inline-block;
     height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     a {
       display: inline-block;
