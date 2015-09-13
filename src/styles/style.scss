@@ -18,6 +18,7 @@ $font-stack: "Open Sans", Helvetica, sans-serif;
 $pink: rgb(250,226,240);
 $beige: rgb(253,224,201);
 $green: rgb(196,236,228);
+$blue: rgb(34,39,119);
 $gray: rgb(229,229,229);
 $lgray: rgb(245,245,245);
 $midgray: rgb(157,157,157);
@@ -142,6 +143,28 @@ body {
   background-color: $midgray;
 }
 
+.blue {
+  background-color: $blue;
+}
+
+.contact {
+  width: 190px;
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+  margin: 25px auto;
+
+  .email {
+    margin-top: 15px;
+    padding: 2px 0 3px 0;
+    color: $blue;
+    background-color: white;
+    font-style: normal;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
 .gallery {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -178,7 +201,8 @@ body {
   color: #292929;
 
   .head {
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: -5px;
     font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 2px;

@@ -655,6 +655,24 @@ body {
 .midgray {
   background-color: #9d9d9d; }
 
+.blue {
+  background-color: #222777; }
+
+.contact {
+  width: 190px;
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+  margin: 25px auto; }
+  .contact .email {
+    margin-top: 15px;
+    padding: 2px 0 3px 0;
+    color: #222777;
+    background-color: white;
+    font-style: normal;
+    text-align: center;
+    text-decoration: underline; }
+
 .gallery {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -680,7 +698,8 @@ body {
   padding: 0 15px;
   color: #292929; }
   .text .head {
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: -5px;
     font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 2px; }
